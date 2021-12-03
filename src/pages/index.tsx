@@ -59,23 +59,23 @@ const metaData: PageMetaData = {
     image: [
         {
             src: `${BASE_URL}/infograph_1.jpg"`,
-            // type: "image/jpg",
+            type: "image/jpeg",
         },
         {
             src: `${BASE_URL}/infograph_2.jpg"`,
-            // type: "image/jpg",
+            type: "image/jpeg",
         },
         {
             src: `${BASE_URL}/infograph_3.jpg"`,
-            // type: "image/jpg",
+            type: "image/jpeg",
         },
         {
             src: `${BASE_URL}/infograph_4.jpg"`,
-            // type: "image/jpg",
+            type: "image/jpeg",
         },
         {
             src: `${BASE_URL}/infograph_5.jpg"`,
-            // type: "image/png",
+            type: "image/jpeg",
         },
     ],
 };
