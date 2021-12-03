@@ -1,8 +1,8 @@
 import { Image } from "@chakra-ui/image";
 import { Box, Flex } from "@chakra-ui/layout";
 import { css, keyframes } from "@emotion/react";
-import { useEffect, useMemo, useRef, useState } from "react";
-import InfographItem1, { InfographItem1Props } from "./InfographItem1";
+import { useEffect, useRef, useState } from "react";
+import InfographItem1 from "./InfographItem1";
 
 export interface InfographItem {
     icon: string;

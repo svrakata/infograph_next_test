@@ -1,19 +1,18 @@
 import { Box } from "@chakra-ui/layout";
 import { NextPage } from "next";
-import Head from "next/head";
+import Head, { PageHeadProps } from "./Head";
 
-const Layout: NextPage = (props) => {
-    const { children } = props;
+interface LayoutProps {
+    meta?: PageHeadProps;
+}
+
+const Layout: NextPage<LayoutProps> = (props) => {
+    const { children, meta = {} } = props;
 
     return (
         <Box>
-            <Head>
-                <title>Infograph</title>
-            </Head>
-
-            <Box>
-                {children}
-            </Box>
+            <Head {...meta} />
+            <Box>{children}</Box>
         </Box>
     );
 };
