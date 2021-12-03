@@ -58,23 +58,23 @@ const infographData: IInfograph = {
 const metaData: PageMetaData = {
     image: [
         {
-            src: `${BASE_URL}/infograph_1.png"`,
-            // type: "image/png",
+            src: `${BASE_URL}/infograph_1.jpg"`,
+            // type: "image/jpg",
         },
         {
-            src: `${BASE_URL}/infograph_2.png"`,
-            // type: "image/png",
+            src: `${BASE_URL}/infograph_2.jpg"`,
+            // type: "image/jpg",
         },
         {
-            src: `${BASE_URL}/infograph_3.png"`,
-            // type: "image/png",
+            src: `${BASE_URL}/infograph_3.jpg"`,
+            // type: "image/jpg",
         },
         {
-            src: `${BASE_URL}/infograph_4.png"`,
-            // type: "image/png",
+            src: `${BASE_URL}/infograph_4.jpg"`,
+            // type: "image/jpg",
         },
         {
-            src: `${BASE_URL}/infograph_5.png"`,
+            src: `${BASE_URL}/infograph_5.jpg"`,
             // type: "image/png",
         },
     ],
