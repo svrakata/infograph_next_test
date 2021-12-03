@@ -4,6 +4,7 @@ import { PageMetaData } from "../components/Head";
 import Infograph, { IInfograph } from "../components/infograph/Infograph";
 
 import Layout from "../components/Layout";
+import { BASE_URL } from "../constants/pageMetaData";
 
 const IMAGE_SRC =
     "https://www.pngkit.com/png/full/136-1364547_turmeric-powder-prozac-natural-equivalent.png";
@@ -57,23 +58,23 @@ const infographData: IInfograph = {
 const metaData: PageMetaData = {
     image: [
         {
-            src: "/infograph_1.png",
+            src: `${BASE_URL}/infograph_1.png"`,
             type: "image/png",
         },
         {
-            src: "/infograph_2.png",
+            src: `${BASE_URL}/infograph_2.png"`,
             type: "image/png",
         },
         {
-            src: "/infograph_3.png",
+            src: `${BASE_URL}/infograph_3.png"`,
             type: "image/png",
         },
         {
-            src: "/infograph_4.png",
+            src: `${BASE_URL}/infograph_4.png"`,
             type: "image/png",
         },
         {
-            src: "/infograph_5.png",
+            src: `${BASE_URL}/infograph_5.png"`,
             type: "image/png",
         },
     ],
