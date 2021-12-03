@@ -1,6 +1,7 @@
 import React from "react";
 import NextHead from "next/head";
 import {
+    BASE_URL,
     DESCRIPTION,
     IMAGE,
     KEYWORDS,
@@ -26,6 +27,7 @@ export interface PageMetaDataImage {
 export interface PageMetaData {
     title?: string;
     url?: string;
+    baseUrl?: string;
     description?: string;
     siteName?: string;
     keywords?: string[];
@@ -45,6 +47,7 @@ const Head: React.FC<PageHeadProps> = (props) => {
         keywords = KEYWORDS,
         siteName = SITE_NAME,
         image = [IMAGE],
+        baseUrl = BASE_URL,
 
         updatedTime = null,
     } = props;
@@ -57,6 +60,7 @@ const Head: React.FC<PageHeadProps> = (props) => {
 
             <meta name="description" content={description} />
             <meta name="keywords" content={keywords.join(",")} />
+            <base href={baseUrl}/>
             <link rel="canonical" href={url} />
 
             {/* open graph */}

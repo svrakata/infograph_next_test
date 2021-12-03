@@ -12,3 +12,10 @@ export const IMAGE: PageMetaDataImage = {
     height: "610",
     type: "image/png",
 };
+
+const devRootUrl =
+    process.env.ROOT_URL_DEV ?? process.env.NEXT_PUBLIC_ROOT_URL_DEV;
+const rootUrl = process.env.ROOT_URL ?? process.env.NEXT_PUBLIC_ROOT_URL;
+
+export const BASE_URL =
+    process.env.NODE_ENV === "development" ? devRootUrl : rootUrl;
