@@ -13,9 +13,9 @@ export const IMAGE: PageMetaDataImage = {
     type: "image/png",
 };
 
-const devRootUrl =
+export const ROOT_URL_DEV =
     process.env.ROOT_URL_DEV ?? process.env.NEXT_PUBLIC_ROOT_URL_DEV;
-const rootUrl = process.env.ROOT_URL ?? process.env.NEXT_PUBLIC_ROOT_URL;
+export const ROOT_URL = process.env.ROOT_URL ?? process.env.NEXT_PUBLIC_ROOT_URL;
 
 export const BASE_URL =
-    process.env.NODE_ENV === "development" ? devRootUrl : rootUrl;
+    process.env.NODE_ENV === "development" ? ROOT_URL_DEV : ROOT_URL;
