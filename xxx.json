@@ -1,0 +1,13 @@
+{
+    "background": "jj.svg",
+    "layout": "mobile",
+    "regions": [
+        {
+            "id": "1",
+            "text": "Curcuma lekuva vsichko i sve",
+            "link": "https://example.com/curcuma",
+            "coords": [233, 433, 122, 333],
+            "selector": ""
+        }
+    ]
+}

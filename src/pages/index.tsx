@@ -4,6 +4,7 @@ import { PageMetaData } from "../components/Head";
 import Infograph, { IInfograph } from "../components/infograph/Infograph";
 
 import Layout from "../components/Layout";
+import SvgInfograph from "../components/svg/SvgInfograph";
 import { BASE_URL } from "../constants/pageMetaData";
 
 const IMAGE_SRC =
@@ -40,18 +41,18 @@ const infographData: IInfograph = {
             icon: "kkk",
             title: "Helps wounds heal faster",
         },
-        {
-            icon: "kkk",
-            title: "Helps improve brain function",
-        },
-        {
-            icon: "kkk",
-            title: "Reduces cholesterol",
-        },
-        {
-            icon: "kkk",
-            title: "Helps combat depression",
-        },
+        // {
+        //     icon: "kkk",
+        //     title: "Helps improve brain function",
+        // },
+        // {
+        //     icon: "kkk",
+        //     title: "Reduces cholesterol",
+        // },
+        // {
+        //     icon: "kkk",
+        //     title: "Helps combat depression",
+        // },
     ],
 };
 
@@ -69,10 +70,11 @@ const Home: NextPage = () => {
     return (
         <Layout meta={metaData}>
             <Flex align="center" justify="center" h="100vh">
-                <Infograph
+                {/* <Infograph
                     image={infographData.image}
                     items={infographData.items}
-                />
+                /> */}
+                <SvgInfograph></SvgInfograph>
             </Flex>
         </Layout>
     );
