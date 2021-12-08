@@ -10,7 +10,7 @@ const Layout: NextPage<LayoutProps> = (props) => {
     const { children, meta = {} } = props;
 
     return (
-        <Box>
+        <Box p="4">
             <Head {...meta} />
             <Box>{children}</Box>
         </Box>

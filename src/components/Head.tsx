@@ -60,7 +60,7 @@ const Head: React.FC<PageHeadProps> = (props) => {
 
             <meta name="description" content={description} />
             <meta name="keywords" content={keywords.join(",")} />
-            <base href={baseUrl}/>
+            <base href={baseUrl} />
             <link rel="canonical" href={url} />
 
             {/* open graph */}
@@ -70,6 +70,17 @@ const Head: React.FC<PageHeadProps> = (props) => {
             <meta property="og:site_name" content={siteName} />
             <meta property="og:title" content={title} />
             <meta property="og:description" content={description} />
+
+            <link rel="preconnect" href="https://fonts.googleapis.com" />
+            <link
+                rel="preconnect"
+                href="https://fonts.gstatic.com"
+                crossOrigin=""
+            />
+            <link
+                href="https://fonts.googleapis.com/css2?family=Readex+Pro:wght@300;400;700&display=swap"
+                rel="stylesheet"
+            />
 
             {image.map((im, i) => {
                 const {

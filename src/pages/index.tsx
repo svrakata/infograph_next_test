@@ -1,4 +1,5 @@
-import { Flex } from "@chakra-ui/layout";
+import { Box, Flex } from "@chakra-ui/layout";
+import { Heading } from "@chakra-ui/react";
 import type { NextPage } from "next";
 import { PageMetaData } from "../components/Head";
 import Infograph, { IInfograph } from "../components/infograph/Infograph";
@@ -62,20 +63,25 @@ const metaData: PageMetaData = {
             src: `${BASE_URL}/infograph_ideal.png`,
             type: "image/png",
         },
-
     ],
 };
 
 const Home: NextPage = () => {
     return (
         <Layout meta={metaData}>
-            <Flex align="center" justify="center" h="100vh">
-                {/* <Infograph
-                    image={infographData.image}
-                    items={infographData.items}
-                /> */}
+            <Heading
+                as="h1"
+                fontSize={{ base: "4xl", sm: "6xl" }}
+                color="white"
+                textAlign="center"
+                mt="10"
+                mb={{ base: 12, sm: 14 }}
+            >
+                Cell structure
+            </Heading>
+            <Box maxW="500px" w="100%" mx="auto">
                 <SvgInfograph></SvgInfograph>
-            </Flex>
+            </Box>
         </Layout>
     );
 };
